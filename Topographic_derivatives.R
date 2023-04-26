@@ -2,7 +2,6 @@
 # Created by Luis Rodríguez Lado, PhD
 
 # Load libraries
-  library(envRaster);
   library(terra)
   library(raster)
 
