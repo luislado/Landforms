@@ -20,15 +20,14 @@
 
   # Obtain DEM derived maps
   derived_vars <- terra::terrain(dem, c("slope", "roughness", "aspect", "flowdir", "aspect","TPI","TRI","TRIriley", "TRIrmsd"), unit = "degrees")
-  slope <- derived_vars[["slope"]];
-  plot(slope)
-  roughness <- derived_vars[["roughness"]];  plot(slope)
-  flowdir <- derived_vars[["flowdir"]];  plot(slope)
-  TPI <- derived_vars[["TPI"]];  plot(slope)
-  TRI <- derived_vars[["TRI"]];  plot(slope)
-  TRIriley <- derived_vars[["TRIriley"]];  plot(slope)
-  TRIrmsd <- derived_vars[["TRIrmsd"]]; plot(slope)
-  aspect <- derived_vars[["aspect"]];  plot(slope)
-  northness <- cos(derived_vars[["aspect"]] * pi / 180);  plot(slope)
-  eastness <- sin(derived_vars[["aspect"]] * pi / 180);  plot(slope)
+  slope <- derived_vars[["slope"]]; #plot(slope)
+  roughness <- derived_vars[["roughness"]];  #plot(roughness)
+  flowdir <- derived_vars[["flowdir"]];  #plot(flowdir)
+  TPI <- derived_vars[["TPI"]];  #plot(TPI)
+  TRI <- derived_vars[["TRI"]];  #plot(TRI)
+  TRIriley <- derived_vars[["TRIriley"]];  #plot(TRIriley)
+  TRIrmsd <- derived_vars[["TRIrmsd"]]; #plot(TRIrmsd)
+  aspect <- derived_vars[["aspect"]];  #plot(aspect)
+  northness <- cos(derived_vars[["aspect"]] * pi / 180);  #plot(northness)
+  eastness <- sin(derived_vars[["aspect"]] * pi / 180);  #plot(eastness)
   
